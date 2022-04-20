@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+
+    <link rel="stylesheet" href="form.css"> 
+    <link rel="icon" href="sign.png">
+    <script>
+        function valid()
+       {
+        if(document.getElementById("f1").value=="")
+                {
+                    alert("Enter your First name!");
+                    document.getElementById("f1").focus();
+                    return false;
+                }
+                if(document.getElementById("f2").value=="")
+                {
+                    alert("Enter your Last name!");
+                    document.getElementById("f2").focus();
+                    return false;
+                }
+                if(document.getElementById("f3").value=="")
+                {
+                    alert("Enter your Date of birth!");
+                    document.getElementById("f3").focus();
+                    return false;
+                }
+                if(document.getElementsById("f4").value=="")
+                {
+                    alert("Enter your Contact Number!");
+                    document.getElementsById("f4").focus();
+                    return false;
+                }
+                if(document.getElementById("f5").value=="")
+                {
+                    alert("Enter your Email Address!");
+                    document.getElementById("f5").focus();
+                    return false;
+                }
+                
+                return (true);
+       } 
+    </script>
+</head>
+<body>
+    <form name="myForm" onsubmit="return(valid());">
+        <h2>SIGN-UP</h2>
+    <table align="center" cellpadding="10">
+        <tr>
+            <td>FIRST NAME</td>
+            <td><input type="text" name="Fname" id="f1"></td>
+        </tr>
+
+        <tr>
+            <td>LAST NAME</td>
+            <td><input type="text" name="Lname" id="f2"></td>
+        </tr>
+
+        <tr>
+            <td>DATE OF BIRTH</td>
+            <td><input type="date" id="f3"> </td>
+            </tr>
+
+            <tr>
+                <td>MOBILE NUMBER</td>
+                <td><input type="text"  id="f4"></td>
+            </tr>
+
+            <tr>
+                <td>EMAIL ID</td>
+                <td><input type="text"  id="f5" ></td>
+            </tr>
+
+            <tr>
+                <td>GENDER</td>
+                <td>
+                    Male <input type="radio" name="Gender" value="Male">
+                    Female <input type="radio" name="Gender" value="Female">
+                Other<input type="radio" name="Gender" value="other" ></td>
+            </tr>
+
+            <tr>
+                <td>ADDRESS <br /><br /></td>
+                <td><textarea name="Address" rows="3" cols="30"></textarea></td>
+            </tr>
+
+            <tr>
+                <td>CITY</td>
+                <td><input type="text" name="city" maxlength="25"></td>
+            </tr>
+            <tr>
+                <td>PIN CODE</td>
+                <td><input type="text" name="pin" maxlength="6"></td>
+            </tr>
+            <tr>
+                <td>STATE</td>
+                <td><input type="text" name="state" maxlength="25"></td>
+            </tr>
+            <tr>
+                <td>COUNTRY</td>
+                <td><input type="text" name="Country"  maxlength="25"></td>
+            </tr>
+            <tr>
+                 <td>Tell us a little about yourself:</td>
+                 <td> <textarea name="Comments" cols=30 rows=4></textarea> </br> </br></tr></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit"></td>
+           <td> <input type="reset" value="Reset"></td>
+            
+                </tr>
+    </table>
+
+   
+    </form>
+
+</body>
+</html>
